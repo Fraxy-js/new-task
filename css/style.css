@@ -6,20 +6,30 @@
 }
 
 body{
-    margin: 0px 15px;
+    margin: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-#nav{
+nav{
     background-color:white;
     display: flex;
     width: 100%;
     height: 93.99px;
+    justify-content: space-around;
+    align-items: center;
+    user-select: none;
+}
+
+.logo{
+    width: 180px;
+    height: 90%;
 }
 
 img{
-    width: 180px;
-    height: 90%;
-    margin-left: -30px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .input{
@@ -29,19 +39,26 @@ img{
     outline: none;
 }
 
+.ul li{
+    list-style: none;
+}
+
 a{
-    margin: auto;
+    margin: 20px;
     text-decoration: none;
     color: black;
     font-size: 13px;
     font-weight: bold;
 }
 
+.links{
+    margin: 30px;
+}
+
 .search{
     display: flex;
     border-bottom-style: solid;
-    height: 39px;
-    margin-top: 26px;
+    height: 26px;
 }
 
 .number{
@@ -50,6 +67,7 @@ a{
     border-radius: 8px;
     padding: 10px 35px 10px 35px;
     color: black;
+    cursor: pointer;
 }
 
 .numberp{
@@ -64,13 +82,120 @@ a{
 
 .lnr-user{
     width: 20px;
+    margin: 0px 0px 0px 35px;
 }
 
-.content{
+.active,.links a:hover{
+    color: #0086e5;
+}
+
+.content-menu{
+    display: none;
+    user-select: none;
+}
+
+.links div:hover .content-menu{
+    display: block;
+    position: absolute;
     width: 100%;
-    height: 100vh;
-    pointer-events: none;
-    background: url(../images/background.jpg);
-    border-radius: 17px;
-    background-size: 100% 100%;
+    height: 100%;
+    margin-left: -520px;
+    text-align: left;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);   
+    margin-top: 2px;     
+}
+
+.content div:hover .links{
+    color: rgb(226, 36, 36);
+}
+
+.box1{
+    border: 3px solid;
+    border-radius: 8px;
+    width: 350px;
+    height: 170px;
+    margin: 10px;
+}
+.box2{
+    border: 3px solid;
+    border-radius: 8px;
+    width: 350px;
+    height: 170px;
+    margin: 10px;
+}
+.box3{
+    border: 3px solid;
+    border-radius: 8px;
+    width: 350px;
+    height: 170px;
+    margin: 10px;
+}
+.box4{
+    border: 3px solid;
+    border-radius: 8px;
+    width: 350px;
+    height: 170px;
+    margin: 10px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+h1{
+    font-size: 50px;
+    padding: 50px;
+}
+
+.box div:hover{
+    color: #0086e5;
+}
+
+.box div:hover .lnr-arrow-right-circle{
+    color: #0086e5;
+}
+
+.contp{
+    padding: 10px;
+}
+
+.lnr-arrow-right-circle{
+    width: 40px;
+    padding: 10px;
+}
+
+.number:hover{
+    background-color: black;
+}
+
+.number:hover .numberp{
+    color: white;
+}
+
+.seemore{
+    border: 2px solid;
+    border-radius: 8px;
+    color: black;
+    cursor: pointer;
+    width: 90px;
+    height: 40px;
+    margin: 20px;
+}
+
+.seemorep{
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.seemore:hover{
+    background-color: black;
+}
+
+.seemore:hover .seemorep{
+    color: white;
 }
